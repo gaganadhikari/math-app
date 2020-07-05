@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title> mathapp </title>
+        <script src = "mathapp.js"></script>
+    </head>
+    <body>
+        <br/>
+        <center>
+            <h1 id="demo">
+                <script>
+                    var numOne = Math.floor(Math.random()*10) + 1;
+                    var numTwo = Math.floor(Math.random()*10) + 1;
+                    document.write(numOne + "+" + numTwo);
+                    var correctAns = numOne + numTwo ;
+                </script>
+            </h1>
+            <p> Please Enter Your Answer : </p>
+            <input id = "answer">
+            <button type = "button" onclick="addition()">Submit</button>
+            <button type = "button" value = "get a new question" onclick="newQuestion()">New One</button>
+            <br/>
+            <br/>
+            <p id = "output" ></p>
+        </center>
+        <script>
+            //document.write(correctAns);
+        </script>
+    </body>
+</html>  
